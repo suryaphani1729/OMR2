@@ -17,6 +17,7 @@ pipeline {
       steps {
         echo 'Deploy'
         sh 'npm install'
+        sh 'android/gradlew assembleDebug'
       }
     }
 
