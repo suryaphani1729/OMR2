@@ -17,7 +17,10 @@ pipeline {
       steps {
         echo 'Deploy'
         sh 'npm install'
-        sh 'android/gradlew assembleRelease'
+        dir(path: 'android') {
+          sh 'bundle install'
+        }
+
       }
     }
 
