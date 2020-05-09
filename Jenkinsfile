@@ -30,5 +30,6 @@ pipeline {
     RELEASE_STORE_PASSWORD = 'android'
     RELEASE_KEY_ALIAS = 'omr2-alias'
     RELEASE_KEY_PASSWORD = 'android'
+    ANDROID_HOME = '/home/chitti/Android/Sdk'
   }
 }
