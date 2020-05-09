@@ -18,7 +18,7 @@ pipeline {
         echo 'Deploy'
         sh 'npm install'
         dir(path: 'android') {
-          sh './gradlew clean :app:bundleRelease :app:assembleRelease '
+          sh './gradlew :app:assembleRelease '
         }
 
       }
